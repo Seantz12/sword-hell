@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Scripts/BaseEnemy.gd" type="Script" id=2]
+
+[node name="Area2D" type="Area2D"]
+collision_layer = 2
+script = ExtResource( 2 )
+[connection signal="area_entered" from="." to="." method="_on_Area2D_area_entered"]
